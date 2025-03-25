@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #201c1c;
+    /* Variável global (:root { --variavel: valor;} */
+    --primary-color-darker: #000000;
+    --secondary-color: #ccc
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    /* outline: none; (seria a mesma coisa) */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+form input {
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff81;
+    padding-left: 20px;
+}
+
+form input:focus {
+    background: #eee;
+}
+
+form button {
+    border: none;
+    background: #383838;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+form button:active {
+    background: var(--primary-color);
+}
+
+table {
+    width: 100%;
+}
+
+.green, .red {
+    background: rgb(67, 255, 167);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.red {
+    background: rgb(255, 87, 87);
+}
+
+.error-text{
+    font-size: 0.8em;
+    color: rgb(255, 87, 87);
+}

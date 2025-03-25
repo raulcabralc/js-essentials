@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./style.css"> <!--Arquivo relativo-->
+</head>
+
+<body>
+    <section class="container">
+        <h1>Formulário de Cadastro</h1>
+
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="/" class="form" method="POST">
+            <label for="name">Nome</label>
+            <input type="text" name="name" class="name validate" placeholder="Seu nome" />
+
+            <label for="surname">Sobrenome</label>
+            <input type="text" name="surname" class="surname validate" placeholder="Seu sobrenome" />
+
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" class="cpf validate" placeholder="Seu CPF" />
+
+            <label for="user">Usuário</label>
+            <input type="text" name="user" class="user validate" placeholder="Seu usuário" />
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" class="password validate" placeholder="Sua senha" />
+
+            <label for="confirm-password">Confirmar senha</label>
+            <input type="password" name="confirm-password" class="confirm-password validate" placeholder="Sua senha" />
+
+
+            <button name="btn" type="submit" id="btn">Enviar</button>
+        </form>
+
+        <div id="resultado">
+
+        </div>
+
+    </section>
+
+    <script src="./cpfvalid.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
