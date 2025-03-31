@@ -9,7 +9,7 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     // modo de como estou trabalhando com esse arquivo:
     // mode: 'development':
     // cria o arquivo de maneira normal para um humano ler
