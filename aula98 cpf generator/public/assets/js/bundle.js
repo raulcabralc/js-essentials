@@ -766,7 +766,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // IIFE: (function() ... return x;)();
-(function () {
+(function startGeneration() {
   var generate = new _modules_GenerateCPF__WEBPACK_IMPORTED_MODULE_0__["default"]();
   var result = document.querySelector('.result');
   result.innerHTML = generate.newCpf();
