@@ -1,0 +1,5 @@
+<% Controle de fluxo (if, for...) %>
+<%= Mostra o conteúdo, sem interagir com nada, apenas mostra %>
+<%- Mostra o conteúdo, interagindo com tags HTML %>
+<%# Comentário %>
+<%- include('PATH') %>
