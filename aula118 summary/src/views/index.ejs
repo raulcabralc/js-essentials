@@ -1,0 +1,18 @@
+<%- include('includes/head'); %>
+
+<section class="container">
+    <h1>
+        <%= globalVariable %>
+    </h1>
+
+    <form action="/" method="POST">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" />
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<%- include('includes/footer'); %>
