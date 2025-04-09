@@ -1,0 +1,21 @@
+<%- include('includes/head') %> <%- include('includes/nav') %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 my-4">
+      <h1 class="text-center display-1">Hello, <%= user.username %></h1>
+      <p class="text-center lead" style="font-size: 2rem">
+        You must log out in order to log in another account.
+      </p>
+      <div class="text-center lead" style="font-size: 2rem">
+        <a href="/login/logout">Log Out</a>
+      </div>
+
+      <%- include('includes/messages'); %>
+    </div>
+    <div class="col-lg-3"></div>
+  </div>
+</div>
+
+<%- include('includes/footer') %>

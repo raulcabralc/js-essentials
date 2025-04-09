@@ -1,0 +1,33 @@
+<%- include('includes/head') %> <%- include('includes/nav') %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8 my-4">
+      <h1 class="text-center">Contact Agenda</h1>
+      <p class="text-center lead">Create, edit and delete your contacts</p>
+
+      <%- include('includes/messages'); %>
+
+      <div class="text-center lead">
+        <a href="/contact/index"
+          ><button class="btn btn-dark">Add Contact</button></a
+        >
+      </div>
+
+      <div class="responsive-table">
+        <table class="table my-3">
+          <tr class="border-top">
+            <td class="p-3 rounded-start">Raul</td>
+            <td class="p-3">Cabral</td>
+            <td class="p-3">83900000000</td>
+            <td class="p-3 rounded-end">raulcabralc@gmail.com</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+
+<%- include('includes/footer') %>
