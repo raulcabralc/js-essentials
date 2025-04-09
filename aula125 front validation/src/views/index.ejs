@@ -1,0 +1,59 @@
+<%- include('includes/head') %> <%- include('includes/nav') %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8 my-4">
+      <h1 class="text-center">Contact Agenda</h1>
+      <p class="text-center lead">Create, edit and delete your contacts</p>
+
+      <%- include('includes/messages'); %>
+
+      <div class="text-center lead">
+        <a href="/contact/index"
+          ><button class="btn btn-dark">Add Contact</button></a
+        >
+      </div>
+
+      <% if (contacts.length > 0) { %>
+      <div class="responsive-table">
+        <table class="table my-3 text-center align-middle table-borderless">
+          <tr class="text-center align-middle table-dark">
+            <td class="p-3 rounded-start">Name</td>
+            <td class="p-3">Surname</td>
+            <td class="p-3">Number</td>
+            <td class="p-3">Email</td>
+            <td></td>
+            <td class="rounded-end"></td>
+          </tr>
+          <% contacts.forEach((contact) => { %>
+          <tr class="border-top text-center align-middle">
+            <td class="p-3 rounded-start"><%= contact.name %></td>
+            <td class="p-3"><%= contact.surname %></td>
+            <td class="p-3"><%= contact.number %></td>
+            <td class="p-3"><%= contact.email %></td>
+            <td>
+              <a href="/contact/<%= contact._id %>"
+                ><i style="color: black" class="fa-solid fa-pen"></i
+              ></a>
+            </td>
+            <td class="p-3 rounded-end">
+              <a href="/contact/delete/<%= contact._id %>"
+                ><i style="color: firebrick" class="fa-solid fa-trash"></i
+              ></a>
+            </td>
+          </tr>
+          <% }) %>
+        </table>
+      </div>
+      <% } else { %>
+      <h1 class="lead display-3 text-center my-5">
+        You don't have contacts in your agenda.
+      </h1>
+      <% } %>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+
+<%- include('includes/footer') %>
