@@ -1,0 +1,2 @@
+# Ignore bundled JS files in language statistics
+**/bundle.js linguist-vendored=true
