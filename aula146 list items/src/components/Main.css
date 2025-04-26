@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 80px;
+  gap: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 6px;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.15s ease-in-out;
+}
+
+input:focus {
+  outline: 2px solid var(--dark-grey);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  filter: brightness(95%)
+}
+
+button {
+  font-size: 1.3rem;
+  padding: 6px;
+  border: 2px solid var(--dark-grey);
+  border-radius: 13px;
+  margin: 20px 0;
+  background: var(--beige);
+  filter: brightness(110%);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+  background: var(--dark-grey);
+  color: var(--beige);
+}
+
+button:active {
+  background: var(--dark-grey);
+  color: var(--beige);
+  filter: brightness(50%)
+}
